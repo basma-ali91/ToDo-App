@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section id="home">
+
+        <div class="card">
+            <h1>TODO</h1>
+
+            <div class="homeImg ">
+                <img src="images/icon-sun.svg" alt="">
+            </div>
+        </div>
+
+        <div class="add">
+            <div class="addbtn">
+                <button id="todobtn" onclick="addTask()">+</button>
+            </div>
+
+            <div class="addContent">
+                <input type="text" placeholder="Creat Anew TODO" class="form-control" id="todoInput">
+            </div>
+        </div>
+
+        <div class="todoList">
+            <table class="table container text-center" >
+               <thead>
+                <tr>
+                    <th>TaskName</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+               </thead>
+
+               <tbody id="taskBody">
+                
+               </tbody>
+            </table>
+        </div>
+
+        <div class="end">
+            <p class="text-secondary">
+                you have
+                <span id="taskpending" style="color: rgb(160, 8, 8);"></span>
+                pending task
+            </p>
+
+            <button id="clearBtn" onclick="clearAll()" class="text-secondary">Clear All</button>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

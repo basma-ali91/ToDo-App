@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input ,button{
+    background:transparent;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  color:#fff;
+  height: 100vh;
+}
+
+/* header_______________________________ */
+
+#home {
+  background: hsl(235, 21%, 11%) url(../images/bg-desktop-dark.jpg) no-repeat 0 0;
+ 
+  padding-top: 6rem;
+}
+
+.card{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  background: transparent;
+  border:0;
+}
+
+#home .card h1 {
+  color: #fff;
+  letter-spacing: .75rem;
+  font-weight: 700;
+}
+
+/* add todo ___________________________________________________________________ */
+.add ,.end{
+    margin: 2rem auto  ;
+    padding: .75rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #25273c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+}
+
+.add .addbtn{
+    width: 2rem;
+    height: 2rem;
+    border: 0.1rem solid #4d5066;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.add .addbtn button{
+    color: #a6abd8;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.add .addbtn:hover{
+    background-color: rgb(6, 47, 180);
+}
+.add .addbtn:hover button{
+ color: #fff;
+}
+
+.add .addContent {
+    flex: 1;
+ margin:0 .75rem;
+}
+
+.add .addContent input{
+background-color: transparent;
+border: none;
+font-weight: 300;
+color:aliceblue;
+}
+#clearBtn{
+   border: none;
+    
+}
+ #clearBtn:hover {
+color: #fff !important;
+} 
+
+/*todo list _________________________________________________________________ */
+
+.todoList {
+    margin-bottom: 0;
+    margin: 2rem auto  ;
+    padding: .75rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #25273c;
+    width: 50%;
+}
+
+.todoList table{
+  color: white;
+}
+
+.todoList table th {
+       border-bottom-width: 0;
+}
+
+.todoList table tr{
+  border-style: hidden;
+}
+
+.end{
+    margin: 1rem auto  ;
+    padding: .75rem 1.5rem;
+}
+
+.end p{
+  margin-bottom: 0;
+}
+
