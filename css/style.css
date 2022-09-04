@@ -10,15 +10,15 @@ input ,button{
 body {
   font-family: "Josefin Sans", sans-serif;
   color:#fff;
-  height: 100vh;
+  height: 100%;
 }
 
 /* header_______________________________ */
 
 #home {
   background: hsl(235, 21%, 11%) url(../images/bg-desktop-dark.jpg) no-repeat 0 0;
- 
   padding-top: 6rem;
+  padding-bottom:9.8rem;
 }
 
 .card{
@@ -127,13 +127,17 @@ color: #fff !important;
 /* media query */
 
 @media screen and (max-width: 592px) {
-  
+  #home{
+    padding-bottom: 6.79rem;
+  }
+
 .add{
-    padding: .75rem;
+   
+    width: 70%;
 }
 .add .addbtn{
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.7rem;
+  height: 1.7rem;
 }
 .add .addContent{
   font-size: .5rem;
@@ -144,9 +148,16 @@ color: #fff !important;
 }
 .todoList{
   padding: .5rem;
+  width: 70%;
 }
-.todoList tr th{
+.todoList tr th ,.todoList tr td,.todoList tr td button{
   font-size: .65rem;
+}
+.todoList tr td button{
+  padding :.1rem .25rem;
+}
+.end{
+  width: 70%;
 }
 .end p ,.end button{
   font-size: .7rem;
