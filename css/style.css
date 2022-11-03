@@ -10,7 +10,7 @@ input ,button{
 body {
   font-family: "Josefin Sans", sans-serif;
   color:#fff;
-  height: 100%;
+  height: 100vh;
 }
 
 /* header_______________________________ */
@@ -18,7 +18,16 @@ body {
 #home {
   background: hsl(235, 21%, 11%) url(../images/bg-desktop-dark.jpg) no-repeat 0 0;
   padding-top: 6rem;
-  padding-bottom:9.8rem;
+  /* padding-bottom:9.8rem; */
+  height:100vh;
+
+}
+
+#home .homeImg{
+  cursor: pointer;
+}
+#home .homeImg .light{
+  display: none;
 }
 
 .card{
@@ -127,9 +136,9 @@ color: #fff !important;
 /* media query */
 
 @media screen and (max-width: 592px) {
-  #home{
+  /* #home{
     padding-bottom: 6.79rem;
-  }
+  } */
 
 .add{
    

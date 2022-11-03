@@ -30,6 +30,12 @@ function addTask() {
 
 }
 
+btn.addEventListener("click", function () {
+    addTask();
+})
+
+
+
 // display tasks ___________________________________________________
 function displayTask() {
     var trs = "";
@@ -86,3 +92,17 @@ function NumberOfTasks() {
     var NumberOfTasks = tasks.length;
     document.getElementById("taskpending").innerHTML = NumberOfTasks;
 }
+
+// *************************dark and light mode***********************
+
+$(".dark").click(function () {
+    $("#home").css({ "background": `#fff url(images/bg-desktop-light.jpg) no-repeat 0 0`, "transition": "all 1s" })
+    $(".light").css("display", "block");
+    $(".dark").css("display", "none");
+});
+
+$(".light").click(function () {
+    $("#home").css({ "background": `hsl(235, 21%, 11%) url(images/bg-desktop-dark.jpg) no-repeat 0 0 `, "transition": "all 1s" })
+    $(".light").css("display", "none");
+    $(".dark").css("display", "block");
+});
