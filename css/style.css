@@ -18,7 +18,6 @@ body {
 #home {
   background: hsl(235, 21%, 11%) url(../images/bg-desktop-dark.jpg) no-repeat 0 0;
   padding-top: 6rem;
-  /* padding-bottom:9.8rem; */
   height:100vh;
 
 }
